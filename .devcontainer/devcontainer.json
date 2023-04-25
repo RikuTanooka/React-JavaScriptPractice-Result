@@ -12,11 +12,14 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
+
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
-	"postCreateCommand": "npm install -g ts-node && npx create-react-app my-app-react",
+	//機能のインストールや環境構築するためのコマンドを実行する
+	"postCreateCommand":  "/bin/sh .devcontainer/postCreateCommand.sh",
 
 	// Configure tool-specific properties.
+	//拡張機能のダウンロード
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -29,5 +32,5 @@
 	},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "root"
+	"remoteUser": "node"
 }
