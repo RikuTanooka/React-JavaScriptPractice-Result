@@ -1,6 +1,6 @@
 #ts-nodeのグローバルインストール
 npm install -g ts-node
-#yarnのインストール
-yarn install
+#React等のインストール
+npm install
 #React環境の構築
-yarn create react-app react-place
+npx create-react-app react-place
