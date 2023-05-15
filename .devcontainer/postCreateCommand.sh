@@ -1,5 +1,5 @@
 #ts-nodeのグローバルインストール
-npm install -g ts-node
+#npm install -g ts-node
 #React等のインストール
 npm install
 #React環境の構築
